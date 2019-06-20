@@ -1,12 +1,12 @@
 'use strict';
 
 let questionId = 0
+let Question._All = [];
 
 class Question {
   constructor(content) {
     this.id = ++questionId
     this.content = content;
-    this.constructor._All = [];
   }
   
   save() {
