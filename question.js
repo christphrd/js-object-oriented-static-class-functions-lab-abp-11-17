@@ -1,7 +1,10 @@
 'use strict';
 
+let questionId = 0
+
 class Question {
   constructor(content) {
+    this.id = ++questionId
     this.content = content;
     this.constructor._All = [];
   }
@@ -12,5 +15,9 @@ class Question {
   
   static All() {
     return this._All
+  }
+  
+  static Find(id) {
+    return this.All().find(questionObj => questionObj.id === id)
   }
 }
