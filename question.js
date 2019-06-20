@@ -1,6 +1,6 @@
 'use strict';
 
-let questionId = 0;
+let questionId = 1;
 
 class Question {
   constructor(content) {
