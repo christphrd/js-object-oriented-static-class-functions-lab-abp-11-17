@@ -2,7 +2,7 @@
 
 class Question {
   constructor() {
-    Question._All = [];
+    this.constructor._All = [];
   }
   
   static All() {
