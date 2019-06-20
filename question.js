@@ -18,7 +18,7 @@ class Question {
   }
   
   static Find(id) {
-    return this.All()
+    return this.All().find(questionObj => questionObj.id === id)
   }
 }
 
