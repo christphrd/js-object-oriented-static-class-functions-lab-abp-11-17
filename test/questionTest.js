@@ -52,7 +52,7 @@ describe("Question", function() {
       const question1 = new Question("What's your favorite food?")
       const question2 = new Question("What city were you born in?")
       const question3 = new Question("What's your favorite TV Show")
-
+console.log(Question.All()[1])
       expect(Question.Find(2)).to.equal(question2)       
     })
   })
