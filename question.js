@@ -18,7 +18,7 @@ class Question {
   }
   
   static Find(id) {
-    return this._All.find(questionObj => questionObj.id === id)
+    return this._All.filter(questionObj => questionObj.id === id)
   }
 }
 
