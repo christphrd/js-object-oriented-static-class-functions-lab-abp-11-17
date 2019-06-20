@@ -2,7 +2,6 @@
 
 class Question {
   constructor(content) {
-    // this.id = ++questionId;
     this.content = content;
     this.save();
   }
